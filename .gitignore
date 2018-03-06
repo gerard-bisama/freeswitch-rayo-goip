@@ -1,0 +1,12 @@
+conf/secrets.xml.actual
+policy.json
+logs
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+
+# Ruby test files
+test/vendor/ruby
+test/.bundle

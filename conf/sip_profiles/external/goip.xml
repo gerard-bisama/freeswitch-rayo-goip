@@ -1,0 +1,17 @@
+<include>
+  <gateway name="goip">
+  <!--/// account username *required* ///-->
+  <!-- Extension 1000 in my case -->
+  <param name="username" value="1001"/>
+  <!--/// auth realm: *optional* same as gateway name, if blank ///-->
+  <!-- It must aim to the Goip GateWay IP 192.168.2.2 in my case -->
+  <param name="realm" value="192.168.0.100"/>
+  <!--1234 in my case-->
+  <param name="password" value="12345"/> 
+  <!--/// expire in seconds: *optional* 3600, if blank ///-->
+  <param name="expire-seconds" value="30"/>
+  <!--/// do not register ///-->
+  <param name="register" value="false"/>
+  <!-- which transport to use for register -->
+  </gateway>
+</include>

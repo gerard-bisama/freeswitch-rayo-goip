@@ -1,0 +1,14 @@
+<include>
+<extension name="goip outbound">
+  <condition field="destination_number" expression="^(0(\d{9}))$">
+    <action application="log" data="INFO goip outbound to $1"/>
+    <action application="bridge" data="sofia/gateway/goip/$1|&echo()"/>
+  </condition>
+</extension>
+<extension name="goip inbound">
+  <condition field="destination_number" expression="^(10000)$">
+    <action application="log" data="INFO do you inbound stuff here!!!!! ani --${ani} "/>
+    <action application="hangup" />
+ </condition>
+</extension>
+</include>
