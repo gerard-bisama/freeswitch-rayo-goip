@@ -19,6 +19,7 @@
     <param name="context" value="default"/>
     <param name="disable-register" value="true"/>
     <param name="rtp-timer-name" value="soft"/>
+    <param name="liberal-dtmf" value="true"/>	
   </settings>
 </profile>
 
