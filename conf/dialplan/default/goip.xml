@@ -6,7 +6,7 @@
   </condition>
 </extension>
 <extension name="goip inbound">
-  <condition field="destination_number" expression="^(10000)$">
+  <condition field="destination_number" expression="^(1001)$">
     <action application="log" data="INFO do you inbound stuff here!!!!! ani --${ani} "/>
     <action application="hangup" />
  </condition>
